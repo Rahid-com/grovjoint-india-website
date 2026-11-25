@@ -88,7 +88,7 @@ export default function Home() {
       {/* Elbows */}
       <div className="glass-card product-category-card">
         <div className="category-image">
-          <img src="/images/products/GJ1090L.jpg" alt="Ductile iron elbow fitting" />
+          <img src="/images/products/GJ1590S.jpg" alt="Ductile iron elbow fitting" />
         </div>
         <h3>Elbows &amp; Bends</h3>
         <p>

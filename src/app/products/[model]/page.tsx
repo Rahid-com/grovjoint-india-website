@@ -12,13 +12,15 @@ export function generateStaticParams() {
     model: p.model.toLowerCase()
   }));
 }
+
 function formatSizeInInches(size: string) {
   if (size.includes('/')) {
-    return size.split('/').pop()?.trim() || size;
+    return size.split('/').pop()?.trim().replace(/'/g, '"') || size;
   }
 
-  return size;
+  return size.replace(/'/g, '"');
 }
+
 export default function ProductDetail({
   params
 }: {
@@ -32,10 +34,25 @@ export default function ProductDetail({
 
   const technical = productSpecifications[p.model];
 
- const availableSizes = technical
-  ? technical.availableSizes ??
-    [...new Set(technical.sizes.map((size) => size.nominalSize))]
-  : [];
+  const availableSizes = technical
+    ? technical.availableSizes ??
+      [...new Set(technical.sizes.map((size) => size.nominalSize))]
+    : [];
+
+  const specifications = technical
+    ? technical.specifications.some(
+        (item) => item.label.trim().toLowerCase() === 'model number'
+      )
+      ? technical.specifications.map((item) =>
+          item.label.trim().toLowerCase() === 'model number'
+            ? { ...item, value: p.model }
+            : item
+        )
+      : [
+          { label: 'Model number', value: p.model },
+          ...technical.specifications
+        ]
+    : [];
 
   const certifications = [
     { name: 'UL Listed', image: 'ul.png' },
@@ -65,6 +82,7 @@ export default function ProductDetail({
               </div>
 
               <h1 className="product-detail-title">{p.name}</h1>
+
               <p>
                 <strong style={{ color: 'var(--gold)' }}>
                   Model: {p.model}
@@ -72,13 +90,6 @@ export default function ProductDetail({
               </p>
 
               <p>{p.summary}</p>
-
-              <Link
-                className="button"
-                href={`/request-quote?model=${p.model}`}
-              >
-                Enquire about this model
-              </Link>
 
               <Link className="text-link" href="/products">
                 <ArrowLeft size={14} /> Back to products
@@ -127,7 +138,7 @@ export default function ProductDetail({
                   <div className="product-table-wrap">
                     <table className="product-spec-table">
                       <tbody>
-                        {technical.specifications.map((item, index) => (
+                        {specifications.map((item, index) => (
                           <tr key={index}>
                             <th>{item.label}</th>
                             <td>{item.value}</td>
@@ -136,28 +147,56 @@ export default function ProductDetail({
                       </tbody>
                     </table>
                   </div>
+
+                 
+                 {/* DOWNLOAD AND ENQUIRY BUTTONS */}
+                  <div
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'row',
+                      justifyContent: 'flex-middle',
+                      alignItems: 'center',
+                      gap: '12px',
+                      marginTop: '24px',
+                      flexWrap: 'wrap'
+                    }}
+>
+                    <a
+                      href={`/downloads/${p.model}.pdf`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="button"
+                    >
+                      Download Catalogue PDF
+                    </a>
+
+                    <Link
+                      className="button"
+                      href={`/request-quote?model=${p.model}`}
+                    >
+                      Enquire about this model
+                    </Link>
+                  </div>
+
                 </div>
 
               </div>
 
               {/* AVAILABLE SIZES */}
               <div className="product-technical-section product-available-section">
-                <div className="eyebrow">
-                  AVAILABLE SIZES
-                </div>
 
                 <h2>Available Sizes</h2>
 
                 {availableSizes.length > 0 ? (
                   <div className="available-size-list">
-                 {availableSizes.map((size) => (
-  <span
-    className="available-size-chip"
-    key={size}
-  >
-    {formatSizeInInches(size)}
-  </span>
-))}
+                    {availableSizes.map((size) => (
+                      <span
+                        className="available-size-chip"
+                        key={size}
+                      >
+                        {formatSizeInInches(size)}
+                      </span>
+                    ))}
                   </div>
                 ) : (
                   <div className="notice">
@@ -165,6 +204,7 @@ export default function ProductDetail({
                     the official catalogue.
                   </div>
                 )}
+
               </div>
             </>
           ) : (
@@ -176,10 +216,6 @@ export default function ProductDetail({
 
           {/* CERTIFICATIONS & APPROVALS */}
           <div className="product-technical-section product-certifications">
-
-            <div className="eyebrow">
-              QUALITY ASSURANCE
-            </div>
 
             <h2>Certifications & Approvals</h2>
 
