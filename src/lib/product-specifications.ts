@@ -41,7 +41,7 @@ export const productSpecifications: Record<string, ProductSpecification> = {
     ],
 
     specifications: [
-      { label: 'Product type', value: 'Flexible grooved coupling' },
+      { label: 'Product type', value: 'Flexible coupling' },
       { label: 'Model number', value:' GJFC12G'},
       { label: 'Material', value: 'Ductile iron' },
       { label: 'Gasket material', value: 'EPDM' },
@@ -111,7 +111,7 @@ sizes: [
     ],
 
     specifications: [
-      { label: 'Product type', value: 'Rigid grooved coupling' },
+      { label: 'Product type', value: 'Rigid coupling' },
       { label: 'Model number', value:' GJRC50G'},
       { label: 'Housing material', value: 'Ductile iron – ASTM A536' },
       { label: 'Gasket material', value: 'EPDM' },
@@ -150,7 +150,7 @@ sizes: [
     ],
 
     specifications: [
-      { label: 'Product type', value: 'Large-size flexible grooved coupling' },
+      { label: 'Product type', value: 'Large-size flexible  coupling' },
       { label: 'Model number', value:' GJFC12L'},
       { label: 'Housing material', value: 'Ductile iron – ASTM A536' },
       { label: 'Gasket material', value: 'EPDM' },
@@ -188,7 +188,7 @@ sizes: [
     ],
 
     specifications: [
-      { label: 'Product type', value: 'Large-size rigid grooved coupling' },
+      { label: 'Product type', value: 'Large-size rigid  coupling' },
       { label: 'Model number', value:'GJRC50L '},
       { label: 'Housing material', value: 'Ductile iron – ASTM A536' },
       { label: 'Gasket material', value: 'EPDM' },
@@ -228,7 +228,7 @@ sizes: [
     ],
 
     specifications: [
-      { label: 'Product type', value: 'Heavy-duty flexible grooved coupling' },
+      { label: 'Product type', value: 'Heavy-duty flexible  coupling' },
       { label: 'Model number', value:' GJFC11G'},
       { label: 'Housing material', value: 'Ductile iron – ASTM A536' },
       { label: 'Gasket material', value: 'EPDM' },
@@ -478,7 +478,7 @@ sizes: [
       'Hot-dipped galvanised coating is available as an optional finish.'
     ],
     specifications: [
-      { label: 'Product type', value: '90-degree long grooved elbow' },
+      { label: 'Product type', value: '90-degree long elbow' },
       { label: 'Model number', value:' GJ1090L'},
       { label: 'Material', value: 'Ductile iron – ASTM A536' },
       { label: 'Grooving standard', value: 'AWWA C606' },
@@ -520,7 +520,7 @@ sizes: [
       'Hot-dipped galvanised coating is available as an optional finish.'
     ],
     specifications: [
-      { label: 'Product type', value: '90-degree short grooved elbow' },
+      { label: 'Product type', value: '90-degree short elbow' },
       { label: 'Model number', value:' GJ1590S'},
       { label: 'Material', value: 'Ductile iron – ASTM A536' },
       { label: 'Grooving standard', value: 'AWWA C606' },
@@ -561,7 +561,7 @@ sizes: [
       'Hot-dipped galvanised coating is available as an optional finish.'
     ],
     specifications: [
-      { label: 'Product type', value: '45-degree grooved elbow' },
+      { label: 'Product type', value: '45-degree elbow' },
       { label: 'Model number', value:' GJ1645S'},
       { label: 'Material', value: 'Ductile iron – ASTM A536' },
       { label: 'Grooving standard', value: 'AWWA C606' },
@@ -602,7 +602,7 @@ sizes: [
       'Hot-dipped galvanised coating is available as an optional finish.'
     ],
     specifications: [
-      { label: 'Product type', value: '22.5-degree grooved elbow' },
+      { label: 'Product type', value: '22.5-degree elbow' },
       { label: 'Model number', value:' GJ1222R'},
       { label: 'Material', value: 'Ductile iron – ASTM A536' },
       { label: 'Grooving standard', value: 'AWWA C606' },
@@ -643,7 +643,7 @@ sizes: [
       'Hot-dipped galvanised coating is available as an optional finish.'
     ],
     specifications: [
-      { label: 'Product type', value: '11.25-degree grooved elbow' },
+      { label: 'Product type', value: '11.25-degree elbow' },
       { label: 'Model number', value:' GJ1311R'},
       { label: 'Material', value: 'Ductile iron – ASTM A536' },
       { label: 'Grooving standard', value: 'AWWA C606' },
