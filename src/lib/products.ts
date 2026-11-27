@@ -37,8 +37,8 @@ export const products: Product[] = [
   image:'/images/products/GJMT16T.jpg',
   imageVerified:false
 },
- {name:'Grooved Concentric Reducer',model:'GJRC40G',category:'Reducers',summary:'Concentric reducer for short centre-to-end dimensions.',page:27},
- {name:'Grooved Concentric Reducer – Threaded Ends',model:'GJRC40T',category:'Reducers',summary:'Concentric reducer with threaded end configuration.',page:29},
+ {name:'Grooved Concentric Reducer',model:'GJCR40G',category:'Reducers',summary:'Concentric reducer for short centre-to-end dimensions.',page:27},
+ {name:'Grooved Concentric Reducer – Threaded Ends',model:'GJCR40T',category:'Reducers',summary:'Concentric reducer with threaded end configuration.',page:29},
  {name:'Grooved Reducing Tee – Grooved Ends',model:'GJRT15G',category:'Reducing Tees',summary:'Reducing tee for joining different pipe diameters.',page:31},
  {name:'Grooved Reducing Tee – Threaded Ends',model:'GJRT15T',category:'Reducing Tees',summary:'Reducing tee with threaded branch connection.',page:33},
  {name:'Grooved Eccentric Reducer',model:'GJER45G',category:'Reducers',summary:'Eccentric reducer for offset pipe transitions.',page:35},

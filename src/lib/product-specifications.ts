@@ -41,7 +41,7 @@ export const productSpecifications: Record<string, ProductSpecification> = {
     ],
 
     specifications: [
-      { label: 'Product type', value: 'Flexible coupling' },
+      { label: 'Product type', value: 'Flexible  coupling' },
       { label: 'Model number', value:' GJFC12G'},
       { label: 'Material', value: 'Ductile iron' },
       { label: 'Gasket material', value: 'EPDM' },
@@ -918,8 +918,8 @@ sizes: [
     sizes: []
   },
 
-  GJRC40G: {
-    model: 'GJRC40G',
+  GJCR40G: {
+    model: 'GJCR40G',
     availableSizes: [
       '1¼" x 1"',
       '1½" x 1"',
@@ -981,7 +981,7 @@ sizes: [
     ],
     specifications: [
       { label: 'Product type', value: 'Grooved concentric reducer' },
-      { label: 'Model number', value:' GJRC40G'},
+      { label: 'Model number', value:' GJCR40G'},
       { label: 'Housing material', value: 'Ductile iron – ASTM A536' },
       { label: 'Grooving standard', value: 'AWWA C606' },
       { label: 'Working pressure', value: 'Up to 500 PSI; refer to size-specific catalogue data' },
@@ -991,8 +991,8 @@ sizes: [
     sizes: []
   },
 
-  GJRC40T: {
-    model: 'GJRC40T',
+  GJCR40T: {
+    model: 'GJCR40T',
     availableSizes: [
       '1½" x 1"',
       '2" x 1"',
@@ -1044,7 +1044,7 @@ sizes: [
     ],
     specifications: [
       { label: 'Product type', value: 'Grooved concentric reducer – threaded ends' },
-      { label: 'Model number', value:' GJRC40T'},
+      { label: 'Model number', value:' GJCR40T'},
       { label: 'Housing material', value: 'Ductile iron – ASTM A536' },
       { label: 'Grooving standard', value: 'AWWA C606' },
       { label: 'Working pressure', value: 'Up to 500 PSI; refer to size-specific catalogue data' },

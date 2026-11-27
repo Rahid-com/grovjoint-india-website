@@ -3239,3 +3239,165 @@ body {
     height: 290px;
   }
 }
+/* Align GLOBAL STANDARDS heading with other stat headings */
+.stats .stat:last-child strong {
+  font-size: 24px;
+  white-space: nowrap;
+  letter-spacing: -0.5px;
+}
+.feature-icon {
+  color: #B7C5B5;
+  flex-shrink: 0;
+  margin-bottom: 8px;
+}
+
+.distributor-logo {
+  margin-bottom: 14px;
+}
+
+.distributor-logo img {
+  width: 110px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.distributor-logo {
+  margin-bottom: 18px;
+}
+
+.distributor-logo img {
+  width: 145px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.global-jad-logo {
+  width: 145px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.global-distributor-details p {
+  margin-bottom: 7px;
+}
+
+.global-distributor-details a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* JAD DISTRIBUTOR CARD */
+.global-distributor-card-new {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  align-items: center;
+  gap: 22px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e5e1d9;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(20, 43, 69, 0.08);
+  width: 100%;
+}
+
+.global-jad-logo-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  border-right: 1px solid #e5e1d9;
+  padding-right: 20px;
+}
+
+.global-jad-logo-panel img {
+  width: 125px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.global-jad-heading span {
+  color: #B58A58;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.global-jad-heading h3 {
+  color: #142B45;
+  font-size: 17px;
+  margin: 7px 0 12px;
+}
+
+.global-jad-address {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.global-jad-address svg {
+  flex-shrink: 0;
+  color: #E87526;
+  margin-top: 3px;
+}
+
+.global-jad-contact p {
+  color: #64748b;
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.global-jad-contact a {
+  color: #142B45;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .global-distributor-card-new {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .global-jad-logo-panel {
+    border-right: none;
+    border-bottom: 1px solid #e5e1d9;
+    padding: 0 0 16px;
+    min-height: auto;
+  }
+
+  .global-jad-logo-panel img {
+    width: 115px;
+  }
+}
+
+/* Distributor card hover animation */
+.global-distributor-card-new {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+  cursor: pointer;
+}
+
+.global-distributor-card-new:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 45px rgba(20, 43, 69, 0.16);
+  border-color: #B58A58;
+}
+
+/* Slight logo animation */
+.global-jad-logo-panel img {
+  transition: transform 0.35s ease;
+}
+
+.global-distributor-card-new:hover .global-jad-logo-panel img {
+  transform: scale(1.08);
+}

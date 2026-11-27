@@ -1,5 +1,14 @@
 import HomeClientMarquee from '@/components/HomeClientMarquee';import Link from 'next/link';
-import { ArrowUpRight, Boxes, Globe2 } from 'lucide-react';
+import {
+  ArrowUpRight,
+  Boxes,
+  Globe2,
+  ShieldCheck,
+  CreditCard,
+  Wrench,
+  Award,
+  Truck
+} from 'lucide-react';
 import { Shell } from '@/components/Site';
 import HeroSlider from '@/components/HeroSlider';
 
@@ -45,10 +54,10 @@ export default function Home() {
               </div>
 
             <div className="stat">
-  <strong>GLOBAL STANDARDS</strong>
+  <strong>GLOBALLY CERTIFIED</strong>
   <span>
-    Certified to Global Quality and Fire Safety Standards.
-  </span>
+    <h4>Certified to International Quality and Fire Protection Standards.
+  </h4></span>
 </div>
             </div>
           </div>
@@ -176,37 +185,45 @@ export default function Home() {
               </h2>
 
               <p>
-                The company catalogue highlights restrained connections,
+                Our company catalogue highlights restrained connections,
                 reduced installation costs and flexibility in grooved piping
                 systems. The product range is presented for infrastructure,
                 fire-protection and building-services applications.
               </p>
 
-              <div className="feature-list">
-                <div className="feature-item">
-                  Reliable connections
-                </div>
+              
+<div className="feature-list">
+  <div className="feature-item">
+    <ShieldCheck className="feature-icon" size={22} />
+    <span>Reliable Connections</span>
+  </div>
 
-                <div className="feature-item">
-                  Reduced installed costs
-                </div>
+  <div className="feature-item">
+    <CreditCard className="feature-icon" size={22} />
+    <span>Reduced Installed Costs</span>
+  </div>
 
-                <div className="feature-item">
-                  Ease and speed of installation
-                </div>
+  <div className="feature-item">
+    <Wrench className="feature-icon" size={22} />
+    <span>Ease and Speed of Installation</span>
+  </div>
 
-                <div className="feature-item">
-                  Noise and vibration reduction
-                </div>
+  <div className="feature-item">
+    <Award className="feature-icon" size={22} />
+    <span>Globally Certified</span>
+  </div>
 
-                <div className="feature-item">
-                  Movement accommodation
-                </div>
+  <div className="feature-item">
+    <Boxes className="feature-icon" size={22} />
+    <span>Wide Product Range</span>
+  </div>
 
-                <div className="feature-item">
-                  Rigid and flexible coupling options
-                </div>
-              </div>
+  <div className="feature-item">
+    <Truck className="feature-icon" size={22} />
+    <span>Reliable &amp; On-Time Delivery</span>
+  </div>
+</div>
+
 
               <Link className="text-link" href="/about">
                 Discover our company <ArrowUpRight size={14} />
@@ -247,32 +264,42 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="glass-card">
-              <div className="iconbox">
-                <Globe2 size={21} />
-              </div>
+           
+<div className="glass-card">
+  <div className="distributor-logo">
+    <img
+      src="/images/cilents/jad.jpeg"
+      alt="JAD Al Riyadh Trading Co. Ltd. logo"
+    />
+  </div>
 
-              <h3>
-                Distribution contact listed in catalogue
-              </h3>
+  <h3>DISTRIBUTORS</h3>
 
-              <p>
-                <strong>JAD Al Riyadh Trading Co. Ltd.</strong>
-              </p>
+  <p>
+    <strong>JAD Al Riyadh Trading Co. Ltd.</strong>
+  </p>
 
-              <p>
-                King Abdul Aziz Road, Sulimaniyah, Natcom Building,
-                2nd Floor, Office #12, Riyadh, Saudi Arabia.
-              </p>
+  <p>
+    King Abdul Aziz Road, Sulimaniyah, Natcom Building,
+    2nd Floor, Office #12, Riyadh, Saudi Arabia.
+</p>
 
-              <p>
-                Contact details :  
-                Tel:+966 11 217 1101 , 
-                Fax:+966 11 217 1194.
-              </p>
-            </div>
-          </div>
+  <p>
+    Email: <a href="mailto:sale@jad.com.sa">sale@jad.com.sa</a>
+  </p>
+
+  <p>
+    Tel: +966 11 217 1101
+  </p>
+
+  <p>
+    Fax: +966 11 217 1194
+  </p>
+</div>
+    </div>
         </section>
+
+
                 <HomeClientMarquee />
 
         {/* FINAL CALL TO ACTION */}
