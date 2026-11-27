@@ -3401,3 +3401,98 @@ body {
 .global-distributor-card-new:hover .global-jad-logo-panel img {
   transform: scale(1.08);
 }
+
+
+/* GLOBAL MAP OVERLAY */
+.global-map-routes {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+  pointer-events: none;
+}
+
+/* COUNTRY MARKERS */
+.map-place {
+  pointer-events: none;
+}
+
+.map-place > circle {
+  fill: #36A852;
+  stroke: #FFFFFF;
+  stroke-width: 1.1;
+}
+
+/* ALWAYS VISIBLE NAVY COUNTRY LABELS */
+.map-label rect {
+  fill: #142B45;
+  filter: url(#map-label-shadow);
+}
+
+.map-label text {
+  fill: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-size: 3.4px;
+  font-weight: 700;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+/* TAMIL NADU HIGHLIGHT */
+.map-origin > circle:first-child {
+  fill: #168C32;
+  stroke: #FFFFFF;
+  stroke-width: 1.3;
+}
+
+.map-origin .origin-inner {
+  fill: #FFFFFF;
+  stroke: none;
+}
+
+.origin-label rect {
+  fill: #168C32;
+  filter: url(#map-label-shadow);
+}
+
+.origin-label path {
+  fill: none;
+  stroke: #168C32;
+  stroke-width: 1.5;
+}
+
+.origin-label text {
+  fill: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-size: 3.5px;
+  font-weight: 700;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.origin-label .origin-country {
+  font-size: 3.1px;
+  font-weight: 500;
+}
+
+.map-label {
+  opacity: 1;
+  visibility: visible;
+}
+
+.map-label rect {
+  fill: #142B45;
+  stroke: #FFFFFF;
+  stroke-width: 0.35;
+}
+
+.map-label text {
+  fill: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-size: 3.5px;
+  font-weight: 700;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
