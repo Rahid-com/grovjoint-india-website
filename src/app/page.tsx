@@ -32,11 +32,11 @@ export default function Home() {
                 <span>Catalogue product models</span>
               </div>
 
-              <div className="stat">
-                <strong>500 PSI</strong>
-                <span>
-                  Maximum working pressure stated for selected coupling models
-                </span>
+             <div className="stat">
+              <strong>UL &amp; FM</strong>
+              <span>
+                   Certified for Our Range of Products
+               </span>
               </div>
 
               <div className="stat">
@@ -44,12 +44,12 @@ export default function Home() {
                 <span>Ductile iron product range</span>
               </div>
 
-              <div className="stat">
-                <strong>ISO</strong>
-                <span>
-                  Management-system certificates shown in catalogue
-                </span>
-              </div>
+            <div className="stat">
+  <strong>GLOBAL STANDARDS</strong>
+  <span>
+    Certified to Global Quality and Fire Safety Standards.
+  </span>
+</div>
             </div>
           </div>
         </section>
@@ -103,7 +103,7 @@ export default function Home() {
       {/* Tees */}
       <div className="glass-card product-category-card">
         <div className="category-image">
-          <img src="/images/products/GJXT35G.jpg" alt="Ductile iron tee fitting" />
+          <img src="/images/tees.png" alt="Ductile iron tee fitting" />
         </div>
         <h3>Tees &amp; Crosses</h3>
         <p>
@@ -118,7 +118,7 @@ export default function Home() {
       {/* Mechanical Tees */}
       <div className="glass-card product-category-card">
         <div className="category-image">
-          <img src="/images/products/GJMT15G.jpg" alt="Mechanical tee fitting" />
+          <img src="/images/mech%20tees.png" alt="Mechanical tee fitting" />
         </div>
         <h3>Mechanical Tees</h3>
         <p>
@@ -133,7 +133,7 @@ export default function Home() {
       {/* Reducers */}
       <div className="glass-card product-category-card">
         <div className="category-image">
-          <img src="/images/products/GJER45G.jpg" alt="Ductile iron reducer fitting" />
+          <img src="/images/reducres.png" alt="Ductile iron reducer fitting" />
         </div>
         <h3>Reducers</h3>
         <p>
@@ -148,7 +148,7 @@ export default function Home() {
       {/* Flanges */}
       <div className="glass-card product-category-card">
         <div className="category-image">
-          <img src="/images/products/GJF14PN.jpg" alt="Ductile iron flanged fitting" />
+         <img src="/images/flanges.png" alt="Ductile iron flanged fitting" />
         </div>
         <h3>Flanges &amp; Adaptors</h3>
         <p>
