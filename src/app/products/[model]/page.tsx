@@ -111,9 +111,7 @@ export default function ProductDetail({
 
                 {/* ABOUT PRODUCT */}
                 <div className="product-technical-section">
-                  <div className="eyebrow">
-                    PRODUCT INFORMATION
-                  </div>
+                  
 
                   <h2>About this product</h2>
 
@@ -129,9 +127,7 @@ export default function ProductDetail({
 
                 {/* PRODUCT SPECIFICATIONS */}
                 <div className="product-technical-section">
-                  <div className="eyebrow">
-                    TECHNICAL DATA
-                  </div>
+                  
 
                   <h2>Product specifications</h2>
 
@@ -148,7 +144,7 @@ export default function ProductDetail({
                     </table>
                   </div>
 
-                 
+                  {/* DOWNLOAD AND ENQUIRY BUTTONS */}
                  {/* DOWNLOAD AND ENQUIRY BUTTONS */}
                   <div
                     style={{
