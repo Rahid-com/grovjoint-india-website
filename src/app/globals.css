@@ -3496,3 +3496,68 @@ body {
   text-anchor: middle;
   dominant-baseline: middle;
 }
+
+/* GLOBAL PRESENCE STATIC MAP */
+.global-map-area {
+  position: relative;
+  width: 130%;
+  max-width: none;
+  margin-left: -10%;
+  align-self: center;
+}
+
+.global-presence-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+/* Global Presence – matching map background */
+.global-page .global-hero {
+  background: hsl(35, 46%, 95%);
+}
+
+.global-page {
+  background: #f8f3ec;
+}
+.global-distributor-card {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+.global-distributor-details {
+  flex: 1;
+}
+
+.global-distributor-details h3 {
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.global-distributor-details p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 7px;
+}
+.global-distributor-label strong {
+  font-size: 17px;
+  font-weight: 700;
+}
+/* GLOBAL PRESENCE - DISTRIBUTOR TEXT SIZE */
+
+.global-jad-heading h3 {
+  font-size: 19px !important;
+  line-height: 1.5 !important;
+}
+
+.global-jad-address {
+  font-size: 14px !important;
+  line-height: 1.8 !important;
+}
+
+.global-jad-contact p {
+  font-size: 14px !important;
+  line-height: 1.8 !important;
+}

@@ -215,7 +215,7 @@ export default function Home() {
 
   <div className="feature-item">
     <Boxes className="feature-icon" size={22} />
-    <span>Wide Product Range</span>
+    <span>Widerange of Product </span>
   </div>
 
   <div className="feature-item">
