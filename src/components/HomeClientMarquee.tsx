@@ -10,7 +10,7 @@ const clients = [
   { name: 'Nesma', image: 'nesma.webp' },
   { name: 'EMAAR', image: 'emmar.png' },
   { name: 'DAMAC', image: 'damac.png' },
-  { name: 'DEWA', image: 'dewa.jpeg' },
+  { name: 'DEWA', image: 'dewa.webp' },
   { name: 'Binghatti', image: 'Binghatti.jpg' },
   { name: 'Etihad Electricity', image: 'etihad.jpeg' },
   { name: 'SOBHA Realty', image: 'Sobha-Realty.jpg' },
