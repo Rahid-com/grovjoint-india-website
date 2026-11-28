@@ -36,23 +36,18 @@ export default function About() {
               </h2>
 
               <p>
-                Grovjoint India Pipe Fittings PVT LTD. was established with a
-                commitment to serving piping-system requirements through
-                dependable ductile iron products.
+                At Grovjoint India Pipe Fittings Pvt. Ltd., we don’t just manufacture pipe fittings—we engineer the backbone of modern infrastructure. Specializing in high-performance ductile iron piping solutions, our products are built to thrive in the world’s most demanding environments, from high-pressure fire protection networks and commercial HVAC systems to heavy industrial and waterworks projects.
               </p>
 
               <p>
-                Our product portfolio includes grooved pipe fittings,
-                couplings and flanges. These products
-                support applications where reliable connections and
-                installation efficiency are important.
+                Our comprehensive portfolio of grooved pipe fittings, mechanical couplings, and flanges is designed with two non-negotiable goals: uncompromising leak-tight security and dramatically faster installation. By replacing complex welding and threading with precision-engineered mechanical joints, Grovjoint empowers project teams to cut labor hours, reduce downtime, and build safer, more resilient piping systems on every job site.
               </p>
 
               <p>
-                We believe in understanding customer requirements,
-                providing relevant product information and building
-                long-term business relationships through responsive
-                support.
+                Quality isn’t an afterthought—it is embedded into every stage of our manufacturing process. Backed by strict adherence to global engineering benchmarks (including ASTM, AWWA, ASME, and EN standards), every fitting undergoes rigorous dimensional and pressure testing before it leaves our facility.
+              </p>
+              <p>
+                Today, we proudly supply contractors, MEP engineers, and global distributors across India, the Middle East, Europe, and North America. Combining manufacturing excellence with responsive, hands-on technical support, Grovjoint delivers the right specifications, complete documentation, and dependable material supply to keep your projects moving on schedule.
               </p>
 
               <Link className="text-link" href="/products">
