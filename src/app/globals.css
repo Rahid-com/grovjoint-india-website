@@ -3561,3 +3561,34 @@ body {
   font-size: 14px !important;
   line-height: 1.8 !important;
 }
+
+
+/* Six company statistics - 3 boxes per row */
+.stats {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  border: none !important;
+}
+
+.stats .stat {
+  border: 1px solid #d9dee5 !important;
+  background: #ffffff;
+  padding: 30px !important;
+  min-height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}

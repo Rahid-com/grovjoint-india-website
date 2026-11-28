@@ -20,48 +20,55 @@ export default function Home() {
         {/* HERO IMAGE SLIDER */}
         <HeroSlider />
 
-        {/* COMPANY INTRODUCTION */}
-        <section className="section">
-          <div className="container">
-            <div className="section-head">
-              <div className="eyebrow">Grovjoint India</div>
-              <h2>
-                Built around quality, service and dependable connections.
-              </h2>
-              <p>
-                Our catalogue presents a broad range of grooved ductile iron
-                pipe fittings and couplings designed for practical installation
-                and dependable piping connections.
-              </p>
-            </div>
+   
+{/* COMPANY INTRODUCTION */}
+<section className="section">
+  <div className="container">
+    <div className="section-head">
+      <div className="eyebrow">Grovjoint India</div>
+      <h2>
+        Built around quality, service and dependable connections.
+      </h2>
+      <p>
+        Our catalogue presents a broad range of grooved ductile iron
+        pipe fittings and couplings designed for practical installation
+        and dependable piping connections.
+      </p>
+    </div>
 
-            <div className="stats">
-              <div className="stat">
-                <strong>30+</strong>
-                <span>Catalogue product models</span>
-              </div>
+    <div className="stats">
+      <div className="stat">
+        <strong>30+</strong>
+        <span>Catalogue product models</span>
+      </div>
 
-             <div className="stat">
-              <strong>UL &amp; FM</strong>
-              <span>
-                   Certified for Our Range of Products
-               </span>
-              </div>
+      <div className="stat">
+        <strong>UL &amp; FM</strong>
+        <span>Certified for Our Range of Products</span>
+      </div>
 
-              <div className="stat">
-                <strong>DI</strong>
-                <span>Ductile iron product range</span>
-              </div>
+      <div className="stat">
+        <strong>DI</strong>
+        <span>Ductile iron product range</span>
+      </div>
 
-            <div className="stat">
-  <strong>GLOBALLY CERTIFIED</strong>
-  <span>
-    <h4>Certified to International Quality and Fire Protection Standards.
-  </h4></span>
-</div>
-            </div>
-          </div>
-        </section>
+      <div className="stat">
+        <strong>GLOBALLY CERTIFIED</strong>
+        <span>Certified to International Quality and Fire Protection Standards.</span>
+      </div>
+
+      <div className="stat">
+        <strong>GLOBALLY TRUSTED BRAND</strong>
+        <span>Supplying customers across the world.</span>
+      </div>
+
+      <div className="stat">
+        <strong>ISO CERTIFIED</strong>
+        <span>ISO 9001:2015 | ISO 14001:2015 | ISO 45001:2018</span>
+      </div>
+    </div>
+  </div>
+</section>
 
         
 {/* PRODUCT PORTFOLIO */}
