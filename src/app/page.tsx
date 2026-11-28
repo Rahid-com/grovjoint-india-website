@@ -59,7 +59,7 @@ export default function Home() {
 
       <div className="stat">
         <strong>GLOBALLY TRUSTED BRAND</strong>
-        <span>Supplying customers across the world.</span>
+        <span>Supplying to customers across the world.</span>
       </div>
 
       <div className="stat">
